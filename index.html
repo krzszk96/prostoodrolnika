@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARCIN ZAMECKI</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class='row'>
+      <div class='column'>
+        <div class='first-column'>
+          <div class="title"><img src="images/fish.svg">MARCIN ZAMECKI</div>
+          <div class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="offer-wrap">
+            <div class="offer-title">Oferujemy</div>
+            <div class="product">Produkt 1</div>
+            <div class="product">Produkt 2</div>
+            <div class="product">Produkt 3</div>
+            <div class="product">Produkt 4</div>
+            <div class="product">Produkt 5</div>
+            <div class="product">Produkt 6</div>
+            <div class="product">Produkt 7</div>
+            <div class="product">Produkt 8</div>
+          </div>
+          <button class="order-btn" id="myBtn">ZAMÓW</button>
+          <a href="/app/app-debug.apk" download><button class="app-btn">Pobierz Aplikację</button></a>
+          <div class="footer-wrap">
+            <div class="phone">telefon: +48 609 221 594</div>
+            <div class="email">e-mail: marcel321@wp.pl</div>
+          </div>
+        </div>
+      </div>
+      <div class='column'>
+        <div class='second-column'>
+          <img src="images/trut.png">
+          <img src="images/pond.png">
+          <img src="images/fish.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="contactForm" action="contactform.php" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')">
+
+      <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
+      <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>
+      <input type="text" id="mail" name="mail" placeholder="wpisz e-mail" required/>
+      <textarea id="message-content" name="message" placeholder="złóż zamówienie" rows="4" cols="50" required></textarea>
+
+      <input type="submit" id="btnSend" name="submit" value="WYŚLIJ"/>
+      </form>
+    </div>
+  
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
