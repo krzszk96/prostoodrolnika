@@ -67,7 +67,7 @@ body {
   color: $text-color;
   margin-top: 20px;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 40px;
   }
   @media (max-width: $lg) {
@@ -96,7 +96,7 @@ body {
   text-align: center;
   margin: 0 30px 0 30px;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 16px;
   }
   @media (max-width: $sm) {
@@ -115,7 +115,7 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: $text-color;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 30px;
   }
   @media (max-width: $sm) {
@@ -129,7 +129,7 @@ body {
   color: $text-color;
   margin: 5px 0 5px 0;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 16px;
   }
 }
@@ -145,7 +145,7 @@ body {
   width: 230px;
   cursor: pointer;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 16px;
     width: 200px;
   }
@@ -169,7 +169,7 @@ body {
   width: 230px;
   cursor: pointer;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 16px;
     width: 200px;
   }
@@ -187,7 +187,7 @@ body {
   color: $text-color;
   width: 100%;
 
-  @media (max-width: $xl) {
+  @media (max-width: $xl), (max-height: $md) {
     font-size: 16px;
   }
   @media (max-width: $sm) {

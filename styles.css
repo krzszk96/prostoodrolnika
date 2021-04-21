@@ -95,7 +95,7 @@ body {
   margin-top: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .title {
     font-size: 40px;
   }
@@ -139,7 +139,7 @@ body {
   margin: 0 30px 0 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .desc-text {
     font-size: 16px;
   }
@@ -172,7 +172,7 @@ body {
   color: #ffff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .offer-title {
     font-size: 30px;
   }
@@ -192,7 +192,7 @@ body {
   margin: 5px 0 5px 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .product {
     font-size: 16px;
   }
@@ -211,7 +211,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .order-btn {
     font-size: 16px;
     width: 200px;
@@ -241,7 +241,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .app-btn {
     font-size: 16px;
     width: 200px;
@@ -266,7 +266,7 @@ body {
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-height: 768px) {
   .footer-wrap {
     font-size: 16px;
   }
