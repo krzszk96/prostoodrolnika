@@ -30,8 +30,8 @@
           <button class="order-btn" id="myBtn">ZAMÓW</button>
           <a href="/app/app-debug.apk" download><button class="app-btn">Pobierz Aplikację</button></a>
           <div class="footer-wrap">
-            <div class="phone">telefon: +48 609 221 594</div>
-            <div class="email">e-mail: marcel321@wp.pl</div>
+            <a href="tel:+48 609 221 594"><div class="phone">telefon: +48 609 221 594</div></a>
+            <a href = "mailto: marcel321@wp.pl"><div class="email">e-mail: marcel321@wp.pl</div></a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@
 
       <div class="contact-form-title">Złóż zamówienie</div>
 
-      <form name="contactForm" action="contactform.php" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')">
+      <form name="contactForm" action="contactform.php" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
 
       <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
       <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>

@@ -278,6 +278,11 @@ body {
   }
 }
 
+.footer-wrap a {
+  text-decoration: none;
+  color: #ffff;
+}
+
 .phone,
 .email {
   margin: 20px;
