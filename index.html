@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MARCIN ZAMECKI</title>
+  <title>Prosto od Rolnika</title>
   <link rel="stylesheet" href="styles.css">
   
 </head>
@@ -14,46 +14,137 @@
     <div class='row'>
       <div class='column'>
         <div class='first-column'>
-          <div class="title"><img src="images/fish.svg">NAZWA GRUPY</div>
-          <div class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="title">prosto od Rolnika</div>
+          <div class="desc-text">Kupuj Prosto od Rolnika! Oferujemy świeże produkty w dobrych cenach. Witamy na naszej stronie gdzie możesz kupić Miód, Truskawki, Śliwki i Wiśnie. Pobierz naszą aplikację aby być z nami w stałym kontakcie. </div>
           <div class="offer-wrap">
-            <div class="offer-title">Oferujemy</div>
-            <div class="product">Produkt 1</div>
-            <div class="product">Produkt 2</div>
-            <div class="product">Produkt 3</div>
-            <div class="product">Produkt 4</div>
-            <div class="product">Produkt 5</div>
-            <div class="product">Produkt 6</div>
-            <div class="product">Produkt 7</div>
-            <div class="product">Produkt 8</div>
+            <div class="offer-title">Oferujemy:</div>
+
+            <div class="product">
+              <div class="product-wrap">Miód
+                <button class="order-btn" id="honeyBtn">KUP TERAZ</button>
+              </div> 
+              <div class="footer-wrap">
+                <a href="tel:+48 724 715 105"><div class="phone">telefon: +48 724 715 105</div></a>
+                <a href = "mailto: tomd20@wp.pl"><div class="email">e-mail: tomd20@wp.pl</div></a>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Truskawki
+                <button class="order-btn" id="strawBtn">KUP TERAZ</button>
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 601 274 852"><div class="phone">telefon: +48 601 274 852</div></a>
+                <a href = "mailto: krzysiekbienkowski@gmail.com"><div class="email">e-mail: krzysiekbienkowski@gmail.com</div></a>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Wiśnie
+                <button class="order-btn" id="plumBtn">KUP TERAZ</button>
+              </div>
+              
+              <div class="footer-wrap">
+                <a href="tel:+48 609 221 594"><div class="phone">telefon: +48 506 671 466</div></a>
+                <a href = "mailto: sadnazapieckach@gmail.com"><div class="email">e-mail: sadnazapieckach@gmail.com</div></a>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Śliwki
+                <button class="order-btn" id="cherryBtn">KUP TERAZ</button>
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 609 221 594"><div class="phone">telefon: +48 609 221 594</div></a>
+                <a href = "mailto: marcel321@wp.pl"><div class="email">e-mail: marcel321@wp.pl</div></a>
+              </div>
+            </div>
+
+            
           </div>
-          <button class="order-btn" id="myBtn">ZAMÓW</button>
+          
           <a href="/app/app-debug.apk" download><button class="app-btn">Pobierz Aplikację</button></a>
-          <div class="footer-wrap">
-            <a href="tel:+48 609 221 594"><div class="phone">telefon: +48 609 221 594</div></a>
-            <a href = "mailto: marcel321@wp.pl"><div class="email">e-mail: marcel321@wp.pl</div></a>
-          </div>
+          
         </div>
       </div>
       <div class='column'>
         <div class='second-column'>
-          <img src="images/trut.png">
-          <img src="images/pond.png">
-          <img src="images/fish.png">
+          <img src="images/honey.jpg">
+          <img src="images/straw.jpg">
+          <img src="images/plum.jpg">
         </div>
       </div>
     </div>
   </div>
 
-  <div id="myModal" class="modal">
-
-    <!-- Modal content -->
+  <div id="honeyModal" class="modal"> <!-- HONEY Modal content -->
+    
     <div class="modal-content">
       <span class="close">&times;</span>
 
       <div class="contact-form-title">Złóż zamówienie</div>
 
-      <form name="contactForm" action="contactform.php" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
+      <form name="formhoney" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
+
+      <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
+      <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>
+      <input type="text" id="mail" name="mail" placeholder="wpisz e-mail" required/>
+      <textarea id="message-content" name="message" placeholder="złóż zamówienie" rows="4" cols="50" required></textarea>
+
+      <input type="submit" id="btnSend" name="submit" value="WYŚLIJ"/>
+      </form>
+    </div>
+  
+  </div>
+
+  <div id="strawModal" class="modal"> <!-- STRAWBERRIES Modal content -->
+    
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formstrawberries" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
+
+      <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
+      <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>
+      <input type="text" id="mail" name="mail" placeholder="wpisz e-mail" required/>
+      <textarea id="message-content" name="message" placeholder="złóż zamówienie" rows="4" cols="50" required></textarea>
+
+      <input type="submit" id="btnSend" name="submit" value="WYŚLIJ"/>
+      </form>
+    </div>
+  
+  </div>
+
+  <div id="plumModal" class="modal"> <!-- PLUM Modal content -->
+    
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formplums" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
+
+      <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
+      <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>
+      <input type="text" id="mail" name="mail" placeholder="wpisz e-mail" required/>
+      <textarea id="message-content" name="message" placeholder="złóż zamówienie" rows="4" cols="50" required></textarea>
+
+      <input type="submit" id="btnSend" name="submit" value="WYŚLIJ"/>
+      </form>
+    </div>
+  
+  </div>
+
+  <div id="cherryModal" class="modal"> <!-- CHERRY Modal content -->
+    
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formcherry" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
 
       <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
       <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>

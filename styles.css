@@ -71,7 +71,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.212);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
@@ -93,6 +93,7 @@ body {
   text-shadow: 0px 4px 4px rgba(153, 124, 124, 0.25);
   color: #ffff;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
@@ -136,7 +137,7 @@ body {
   font-size: 20px;
   color: #ffff;
   text-align: center;
-  margin: 0 30px 0 30px;
+  margin: 0 30px 30px 30px;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
@@ -170,6 +171,7 @@ body {
   font-size: 40px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffff;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
@@ -185,11 +187,15 @@ body {
 }
 
 .product {
+  text-align: center;
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 20px;
   color: #ffff;
-  margin: 5px 0 5px 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 5px 0 40px 0;
+  border-bottom: 1px solid #fff;
+  min-width: 100%;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
@@ -198,17 +204,40 @@ body {
   }
 }
 
+.product-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .product-wrap {
+    margin: 0 30px 0 30px;
+  }
+}
+
 .order-btn {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 14px;
   font-family: "OpenSansExtra";
   font-weight: 800;
   background: #ffff;
   text-transform: uppercase;
-  width: 230px;
+  width: 130px;
   cursor: pointer;
+  margin-left: 30px;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
@@ -222,6 +251,8 @@ body {
   .order-btn {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 12px;
+    width: 100px;
   }
 }
 
@@ -239,6 +270,7 @@ body {
   background: #ffff;
   width: 230px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
@@ -261,14 +293,14 @@ body {
           justify-content: space-between;
   font-family: "Open Sans";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
   color: #ffff;
   width: 100%;
 }
 
 @media (max-width: 1200px), (max-height: 768px) {
   .footer-wrap {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -296,12 +328,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -311,7 +346,13 @@ body {
 }
 
 .second-column img {
-  width: 350px;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
 }
 
 @media (max-height: 768px) {
