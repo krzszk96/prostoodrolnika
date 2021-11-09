@@ -204,6 +204,23 @@ body {
   }
 }
 
+.price {
+  font-size: 14px;
+}
+
+.product-wrap p {
+  margin-left: 5px;
+}
+
+.product-wrap p span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.product-wrap p span:nth-child(2) {
+  color: red;
+}
+
 .product-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
