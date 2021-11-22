@@ -85,6 +85,58 @@ body {
   }
 }
 
+.info-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.info {
+  text-transform: uppercase;
+  font-family: "OpenSansExtra";
+  color: #000;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.info:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .info {
+    font-size: 12px;
+  }
+}
+
+.info-column {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.info-text {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000 !important;
+  border-radius: 5px;
+  font-size: 15px !important;
+  padding: 50px;
+}
+
+.info-text p {
+  font-weight: 900;
+  font-size: 24px;
+}
+
 .title {
   font-family: "OpenSansExtra";
   font-weight: 800;

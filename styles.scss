@@ -58,6 +58,45 @@ body {
     border: none;
   }
 }
+.info-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.info {
+  text-transform: uppercase;
+  font-family: "OpenSansExtra";
+  color: #000;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  @media (max-width: $md) {
+    font-size: 12px;
+  }
+}
+.info-column {
+  justify-content: start;
+}
+.info-text {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  color: #000 !important;
+  border-radius: 5px;
+  font-size: 15px !important;
+  padding: 50px;
+}
+.info-text p {
+  font-weight: 900;
+  font-size: 24px;
+}
 .title {
   font-family: "OpenSansExtra";
   font-weight: 800;
