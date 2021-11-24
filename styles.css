@@ -143,6 +143,10 @@ body {
   width: 250px;
 }
 
+.euro img {
+  width: 100%;
+}
+
 .title {
   font-family: "OpenSansExtra";
   font-weight: 800;
