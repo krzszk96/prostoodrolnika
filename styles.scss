@@ -98,9 +98,21 @@ body {
   font-weight: 900;
   font-size: 24px;
 }
+.logo{
+  display: flex;
+  align-items: center;
+}
 .logo img {
   border-radius: 5px;
   width: 250px;
+  margin: 10px;
+
+  @media (max-width: $lg) {
+    width: 150px;
+  }
+  @media (max-width: $sm) {
+    width: 100px;
+  }
 }
 .euro img {
   width: 100%;
