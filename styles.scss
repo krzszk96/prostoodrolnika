@@ -93,6 +93,10 @@ body {
   border-radius: 5px;
   font-size: 15px !important;
   padding: 50px;
+
+  @media (max-width: $md) {
+    padding: 20px;
+  }
 }
 .info-text p {
   font-weight: 900;
@@ -116,6 +120,10 @@ body {
 }
 .euro img {
   width: 100%;
+  @media (max-width: $sm) {
+    margin: 0 10px;
+    width: 95%;
+  }
 }
 .title {
   font-family: "OpenSansExtra";
@@ -160,7 +168,7 @@ body {
     font-size: 16px;
   }
   @media (max-width: $sm) {
-    margin: 20px 30px 20px 30px;
+    margin: 20px;
   }
 }
 .offer-wrap {
