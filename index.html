@@ -185,6 +185,46 @@
   
   </div>
 
+  <div id="beefModal" class="modal"> <!-- BEEF Modal content -->
+    
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formbeef" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
+
+      <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
+      <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>
+      <input type="text" id="mail" name="mail" placeholder="wpisz e-mail" required/>
+      <textarea id="message-content" name="message" placeholder="złóż zamówienie" rows="4" cols="50" required></textarea>
+
+      <input type="submit" id="btnSend" name="submit" value="WYŚLIJ"/>
+      </form>
+    </div>
+  
+  </div>
+
+  <div id="oilModal" class="modal"> <!-- OIL Modal content -->
+    
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formoil" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')" data-netlify="true">
+
+      <input type="text" id="company" name="company" placeholder="wpisz imię" required/>
+      <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required/>
+      <input type="text" id="mail" name="mail" placeholder="wpisz e-mail" required/>
+      <textarea id="message-content" name="message" placeholder="złóż zamówienie" rows="4" cols="50" required></textarea>
+
+      <input type="submit" id="btnSend" name="submit" value="WYŚLIJ"/>
+      </form>
+    </div>
+  
+  </div>
+
   <script src="app.js"></script>
 
 </body>

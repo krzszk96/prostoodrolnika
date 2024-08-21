@@ -45,3 +45,25 @@ var span = document.getElementsByClassName("close")[3];
 span.onclick = function() {
   CherryModal.style.display = "none";
 }
+
+//beef
+var beefModal = document.getElementById("beefModal"); 
+var btnb = document.getElementById("beefBtn"); 
+btnb.onclick = function() {
+  beefModal.style.display = "block";
+}
+var span = document.getElementsByClassName("close")[4];
+span.onclick = function() {
+  beefModal.style.display = "none";
+}
+
+//oil
+var oilModal = document.getElementById("oilModal"); 
+var btno = document.getElementById("oilBtn"); 
+btno.onclick = function() {
+  oilModal.style.display = "block";
+}
+var span = document.getElementsByClassName("close")[5];
+span.onclick = function() {
+  oilModal.style.display = "none";
+}
